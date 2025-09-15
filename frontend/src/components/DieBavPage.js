@@ -479,24 +479,37 @@ const DieBavPage = () => {
         
         <div className="max-w-[1200px] mx-auto px-6 md:px-8">
           
-          {/* Compact Process Steps */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {/* Section Title */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 font-heading">
+              Wir begleiten Sie entlang des gesamten bAV-Prozesses. - <span className="text-acencia-orange">dauerhaft</span>
+            </h2>
+          </div>
+          
+          {/* Four Process Steps */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <div className="compact-process-card">
-              <div className="compact-process-label">Rechtliche Prüfung</div>
-              <div className="compact-process-title">Wir geben Sicherheit</div>
-              <p className="text-acencia-blue text-xs">Rechtssichere, individuelle Vorsorgelösungen</p>
+              <div className="compact-process-label">Rechtliche Prüfung & Einrichtung der bAV</div>
+              <div className="compact-process-title">Wir geben Sicherheit.</div>
+              <p className="text-acencia-blue text-xs">Wir prüfen alle rechtlichen Grundlagen und entwickeln ein passendes Vorsorgemodell – individuell, unabhängig und zukunftssicher.</p>
             </div>
             
             <div className="compact-process-card">
-              <div className="compact-process-label">Digitale Verwaltung</div>
-              <div className="compact-process-title">Wir erleichtern den Alltag</div>
-              <p className="text-acencia-blue text-xs">Automatisierte Prozesse mit persönlichem Support</p>
+              <div className="compact-process-label">Digitale Verwaltung & laufender Support</div>
+              <div className="compact-process-title">Wir erleichtern den Alltag.</div>
+              <p className="text-acencia-blue text-xs">Wir digitalisieren Ihre bAV-Verwaltung, automatisieren Prozesse und begleiten Sie mit persönlichem Support – unabhängig vom aktuellen Stand Ihrer bAV.</p>
             </div>
             
             <div className="compact-process-card">
-              <div className="compact-process-label">Mitarbeiterkommunikation</div>
-              <div className="compact-process-title">Wir begeistern Ihre Teams</div>
-              <p className="text-acencia-blue text-xs">Moderne Beratung, digital oder vor Ort</p>
+              <div className="compact-process-label">Mitarbeiterkommunikation & (digitale) Beratung</div>
+              <div className="compact-process-title">Wir begeistern Ihre Mitarbeitenden.</div>
+              <p className="text-acencia-blue text-xs">Wir informieren über Ansprüche und beraten individuell – digital oder persönlich, verständlich und wertschätzend.</p>
+            </div>
+            
+            <div className="compact-process-card">
+              <div className="compact-process-label">Steuervorteile & Kostenoptimierung</div>
+              <div className="compact-process-title">Wir schaffen Mehrwert.</div>
+              <p className="text-acencia-blue text-xs">Durch Entgeltumwandlung sparen Unternehmen und Mitarbeitende Steuern und Sozialabgaben – das senkt Kosten und steigert Ihre Attraktivität als Arbeitgeber.</p>
             </div>
           </div>
 
