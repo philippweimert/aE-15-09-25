@@ -217,11 +217,14 @@ frontend:
     file: "/app/frontend/src/components/HeroSection.js"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
         - working: true
           agent: "main"
           comment: "Hero section working, but needs Demo buchen button removal"
+        - working: true
+          agent: "main"
+          comment: "Removed video placeholder from Homepage hero and replaced right area with 'Unsere Lösungen' Apple-like service cards (bAV, bKV, bUV). Removed 'Video ansehen' CTA from Homepage hero."
 
 metadata:
   created_by: "main_agent"
