@@ -101,15 +101,7 @@ const Homepage = () => {
                     <ArrowRight className="w-4 h-4" />
                   </button>
                   
-                  <Link 
-                    to="/die-bav?autoplay=true"
-                    className="border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 px-6 py-3 rounded-lg font-medium text-base transition-colors duration-200 flex items-center justify-center space-x-2"
-                  >
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                    <span>Video ansehen</span>
-                  </Link>
+
                 </div>
               </div>
 
