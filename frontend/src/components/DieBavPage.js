@@ -297,13 +297,14 @@ const DieBavPage = () => {
             backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 20px;
-            padding: 16px;
+            padding: 20px;
             transition: all 0.3s ease;
             text-align: center;
-            height: 140px;
+            height: auto;
+            min-height: 200px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
           }
 
           .compact-process-card:hover {
