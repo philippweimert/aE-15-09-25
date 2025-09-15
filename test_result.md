@@ -213,11 +213,11 @@ frontend:
 
   - task: "Homepage Hero Section"
     implemented: true
-    working: true
-    file: "/app/frontend/src/components/HeroSection.js"
-    stuck_count: 0
+    working: false
+    file: "/app/frontend/src/components/HeroSection.js, /app/frontend/src/components/Homepage.js"
+    stuck_count: 1
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         - working: true
           agent: "main"
@@ -225,6 +225,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Removed video placeholder from Homepage hero and replaced right area with 'Unsere Lösungen' Apple-like service cards (bAV, bKV, bUV). Removed 'Video ansehen' CTA from Homepage hero."
+        - working: false
+          agent: "testing"
+          comment: "CRITICAL ISSUE FOUND: Video placeholder still present on homepage. Testing revealed that while HeroSection.js has been properly updated with solution cards, the actual Homepage.js (lines 112-119) still contains the video placeholder ('Video Platzhalter' text). The homepage is using its own hero implementation in Homepage.js rather than the HeroSection.js component. ✅ WORKING: 'Unsere Lösungen' label present, all 3 solution cards (bAV, bKV, bUV) working with correct navigation to /die-bav, /bkv, /buv, 'Video ansehen' CTA removed, responsive layout working on desktop (1280+) and mobile (375px), header navigation and footer working correctly. ❌ NEEDS FIX: Remove video placeholder section from Homepage.js lines 112-119 and ensure solution cards are properly integrated into the main homepage hero section."
 
 metadata:
   created_by: "main_agent"
