@@ -455,13 +455,14 @@ const DieBavPage = () => {
 
           @media (max-width: 768px) {
             .compact-process-card {
-              height: 120px;
-              padding: 12px;
+              min-height: 180px;
+              padding: 16px;
             }
             
             .compact-process-label {
-              font-size: 0.8rem;
+              font-size: 0.75rem;
               padding: 6px 12px;
+              line-height: 1.2;
             }
             
             .compact-comparison-card {
